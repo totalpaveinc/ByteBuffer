@@ -21,11 +21,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5E89C03721E06A430007EF33 /* ByteBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E89C03421E06A430007EF33 /* ByteBuffer.h */; };
 		5E89C04421E06A790007EF33 /* ByteBufferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89C04321E06A790007EF33 /* ByteBufferTests.m */; };
 		5E89C04621E06A790007EF33 /* libByteBuffer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E89C03121E06A430007EF33 /* libByteBuffer.a */; };
 		5E89C05D21E081D90007EF33 /* BYTByteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89C05C21E081D90007EF33 /* BYTByteBuffer.m */; };
 		5E89C08021E1C15D0007EF33 /* NSData+BYTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89C07F21E1C15D0007EF33 /* NSData+BYTExtension.m */; };
+		94B351B22FEC83F700BF12DD /* BYTByteBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94B351AE2FEC83A700BF12DD /* BYTByteBuffer.h */; };
+		94B351B32FEC83F700BF12DD /* ByteBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94B351AF2FEC83A700BF12DD /* ByteBuffer.h */; };
+		94B351B42FEC83F700BF12DD /* NSData+BYTExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94B351B02FEC83A700BF12DD /* NSData+BYTExtension.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				5E89C03721E06A430007EF33 /* ByteBuffer.h in CopyFiles */,
+				94B351B22FEC83F700BF12DD /* BYTByteBuffer.h in CopyFiles */,
+				94B351B32FEC83F700BF12DD /* ByteBuffer.h in CopyFiles */,
+				94B351B42FEC83F700BF12DD /* NSData+BYTExtension.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,14 +57,14 @@
 
 /* Begin PBXFileReference section */
 		5E89C03121E06A430007EF33 /* libByteBuffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libByteBuffer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E89C03421E06A430007EF33 /* ByteBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ByteBuffer.h; sourceTree = "<group>"; };
 		5E89C04121E06A790007EF33 /* ByteBufferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ByteBufferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E89C04321E06A790007EF33 /* ByteBufferTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ByteBufferTests.m; sourceTree = "<group>"; };
 		5E89C04521E06A790007EF33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E89C05B21E081D90007EF33 /* BYTByteBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYTByteBuffer.h; sourceTree = "<group>"; };
 		5E89C05C21E081D90007EF33 /* BYTByteBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYTByteBuffer.m; sourceTree = "<group>"; };
-		5E89C07E21E1C15D0007EF33 /* NSData+BYTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+BYTExtension.h"; sourceTree = "<group>"; };
 		5E89C07F21E1C15D0007EF33 /* NSData+BYTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+BYTExtension.m"; sourceTree = "<group>"; };
+		94B351AE2FEC83A700BF12DD /* BYTByteBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYTByteBuffer.h; sourceTree = "<group>"; };
+		94B351AF2FEC83A700BF12DD /* ByteBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ByteBuffer.h; sourceTree = "<group>"; };
+		94B351B02FEC83A700BF12DD /* NSData+BYTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+BYTExtension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +125,7 @@
 		5E89C05821E07E7A0007EF33 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				5E89C05B21E081D90007EF33 /* BYTByteBuffer.h */,
-				5E89C03421E06A430007EF33 /* ByteBuffer.h */,
-				5E89C07E21E1C15D0007EF33 /* NSData+BYTExtension.h */,
+				94B351B12FEC83A700BF12DD /* ByteBuffer */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -135,6 +137,16 @@
 				5E89C07F21E1C15D0007EF33 /* NSData+BYTExtension.m */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		94B351B12FEC83A700BF12DD /* ByteBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				94B351AE2FEC83A700BF12DD /* BYTByteBuffer.h */,
+				94B351AF2FEC83A700BF12DD /* ByteBuffer.h */,
+				94B351B02FEC83A700BF12DD /* NSData+BYTExtension.h */,
+			);
+			path = ByteBuffer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -403,7 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -416,7 +428,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EBK5DQGGP;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ByteBuffer/Headers/ByteBuffer";
 				INFOPLIST_FILE = ByteBufferTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,7 +448,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EBK5DQGGP;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ByteBuffer/Headers/ByteBuffer";
 				INFOPLIST_FILE = ByteBufferTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
@@ -461,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};

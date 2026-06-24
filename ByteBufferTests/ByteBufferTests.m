@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "ByteBuffer.h"
+#import <ByteBuffer/ByteBuffer.h>
 
 @interface ByteBufferTests : XCTestCase
 
