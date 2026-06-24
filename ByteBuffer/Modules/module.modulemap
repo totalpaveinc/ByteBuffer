@@ -1,6 +1,0 @@
-framework module ByteBuffer {
-  umbrella header "ByteBuffer.h"
-
-  export *
-  module * { export * }
-}
