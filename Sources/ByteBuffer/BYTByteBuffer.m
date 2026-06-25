@@ -6,9 +6,8 @@
 //  Copyright (c) 2019 Hituzi Ando. All rights reserved.
 //
 
-#import "BYTByteBuffer.h"
-
-#import "NSData+BYTExtension.h"
+#import <ByteBuffer/ByteBuffer.h>
+#import <ByteBuffer/NSData+BYTExtension.h>
 
 @interface BYTByteBuffer ()
 

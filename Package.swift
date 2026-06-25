@@ -24,11 +24,11 @@ let package = Package(
             //     "Sources"
             // ],
             publicHeadersPath: "include",
-            // cSettings: [
-            //     // Lets the target's own .m files resolve their quote-style
-            //     // imports now that the headers live in Headers/ByteBuffer/.
-            //     .headerSearchPath("Headers/ByteBuffer")
-            // ]
+//            cSettings: [
+//                 // Lets the target's own .m files resolve their quote-style
+//                 // imports now that the headers live in Headers/ByteBuffer/.
+//                 .headerSearchPath("Sources/ByteBuffer/include")
+//            ]
         ),
         .testTarget(
             name: "ByteBufferTests",

@@ -6,7 +6,7 @@
 //  Copyright (c) 2019 Hituzi Ando. All rights reserved.
 //
 
-#import "NSData+BYTExtension.h"
+#import <ByteBuffer/NSData+BYTExtension.h>
 
 @implementation NSData (BYTExtension)
 
