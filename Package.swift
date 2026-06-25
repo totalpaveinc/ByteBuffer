@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .target(
             name: "ByteBuffer",
-            path: "ByteBuffer",
+//            path: "ByteBuffer",
             exclude: [
                 "Modules",
                 "Resources"
